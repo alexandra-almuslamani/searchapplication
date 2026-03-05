@@ -54,7 +54,7 @@ namespace TestSearchApplication.Services.SearchService
 
                         _searchViewModel.Results.Add(new SearchResultItem
                         {
-                            Text = b.MhNass,
+                            Text = HighlightTextHelper.HighlightMatches(b.MhNass, searchTerm),
                             Accuracy = accuracy,
                             MNO = b.Mno,
                             IsSequential = isSequential

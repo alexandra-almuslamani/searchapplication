@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align:center;">أحاديث</h1>
+    <h1 style="text-align:center;">بحث عن الأحاديث النبوية</h1>
     <br />
     <div class="cr-se">
         @using (Html.BeginForm("Index", "Hadiths", FormMethod.Get, new { id = "search-form" }))
@@ -59,7 +59,7 @@
                     {
                         <tr>
                             <td>@(rowNo += 1)</td>
-                            <td>@result.Text</td>
+                            <td>@Html.Raw(result.Text)</td>
                             <td>@result.Accuracy</td>
                             <td>@result.MNO</td>
                         </tr>
