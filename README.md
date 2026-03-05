@@ -1,4 +1,4 @@
-# Hadith Library Fuzzy Search 
+# Hadith Library Fuzzy Search
 
 A **130k+ Hadith search engine** built with ASP.NET Core MVC.  
 
